@@ -85,7 +85,7 @@ class App extends Component {
     return (
       //Button onclick event, recommended to use .bind (as shown in click below), not using arrow function
       
-      <div className="App">
+      <div className={classes.App}>
         <h1>Hi, I'm a React App</h1>
         <p className={classes.join(' ')}>This is really working!</p>
         <button style={style} onClick={this.togglePersonsHandler}>{this.state.showPersons === true ? "Hide People" : "Show People"}</button>
